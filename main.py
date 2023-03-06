@@ -1,5 +1,5 @@
 '''
-ROCK PAPER SCISSOR
+Mawe Makaratasi Makasi
 '''
 
 import random 
@@ -22,7 +22,7 @@ ALL_PLAYERS = {
     }
     }
 
-RPS=['Rock', "Paper", "Scissor"]
+RPS=['Mawe', "Makaratasi", "Makasi"]
 pre_timer = 3
 MaxRounds = 3
 
@@ -51,27 +51,27 @@ for round in range(MaxRounds):
     print(f'\n{player1}: {ALL_PLAYERS[player1]["choices"][round]}')
     print(f'{player2}: {ALL_PLAYERS[player2]["choices"][round]}')
 
-    if ALL_PLAYERS[player1]["choices"][round] == "Paper" and ALL_PLAYERS[player2]["choices"][round] =="Rock":
+    if ALL_PLAYERS[player1]["choices"][round] == "Makaratasi" and ALL_PLAYERS[player2]["choices"][round] =="Mawe":
         ALL_PLAYERS[player1]['wins'].append(1)
         ALL_PLAYERS[player2]['wins'].append(0)
         print(f'{player1}: wins Round: {round + 1}')
-    elif ALL_PLAYERS[player1]["choices"][round] == "Scissor" and ALL_PLAYERS[player2]["choices"][round] =="Paper":
+    elif ALL_PLAYERS[player1]["choices"][round] == "Makasi" and ALL_PLAYERS[player2]["choices"][round] =="Makaratasi":
         ALL_PLAYERS[player1]['wins'].append(1)
         ALL_PLAYERS[player2]['wins'].append(0)
         print(f'{player1}: wins Round: {round + 1}')
-    elif ALL_PLAYERS[player1]["choices"][round] == "Rock" and ALL_PLAYERS[player2]["choices"][round] =="Scissor":
+    elif ALL_PLAYERS[player1]["choices"][round] == "Mawe" and ALL_PLAYERS[player2]["choices"][round] =="Makasi":
         ALL_PLAYERS[player1]['wins'].append(1)
         ALL_PLAYERS[player2]['wins'].append(0)
         print(f'{player1}: wins Round: {round + 1}')
-    elif ALL_PLAYERS[player1]["choices"][round] == "Paper" and ALL_PLAYERS[player2]["choices"][round] =="Paper":
+    elif ALL_PLAYERS[player1]["choices"][round] == "Makaratasi" and ALL_PLAYERS[player2]["choices"][round] =="Makaratasi":
         ALL_PLAYERS[player1]['wins'].append(0)
         ALL_PLAYERS[player2]['wins'].append(0)
         print(f'{player1}: wins Round: {round + 1}')
-    elif ALL_PLAYERS[player1]["choices"][round] == "Scissor" and ALL_PLAYERS[player2]["choices"][round] =="Scissor":
+    elif ALL_PLAYERS[player1]["choices"][round] == "Makasi" and ALL_PLAYERS[player2]["choices"][round] =="Makasi":
         ALL_PLAYERS[player1]['wins'].append(0)
         ALL_PLAYERS[player2]['wins'].append(0)
         print(f'{player1}: wins Round: {round + 1}')
-    elif ALL_PLAYERS[player1]["choices"][round] == "Rock" and ALL_PLAYERS[player2]["choices"][round] =="Rock":
+    elif ALL_PLAYERS[player1]["choices"][round] == "Mawe" and ALL_PLAYERS[player2]["choices"][round] =="Mawe":
         ALL_PLAYERS[player1]['wins'].append(0)
         ALL_PLAYERS[player2]['wins'].append(0)
         print(f'{player1}: wins Round: {round + 1}')
